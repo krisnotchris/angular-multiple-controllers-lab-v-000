@@ -13,13 +13,13 @@
             Hello, {{ contact.name }}!<br>
             Email: {{ contact.email }}<br>
             Phone: {{ contact.phone }}
+                <div ng-controller='StaffController as staff'>
+                    {{ staff.name }}<br>
+                    {{ staff.email }}<br>
+                    {{ staff.phone }}
+                </div>
+            <button ng-click="contact.changeName()">update</button>
         </div>
-        <div ng-controller='StaffController as staff'>
-            {{ staff.name }}<br>
-            {{ staff.email }}<br>
-            {{ staff.phone }}
-        </div>
-        <button ng-click="contact.changeName()">update</button>
     </div>
 
     <script src="js/angular.js"></script>
